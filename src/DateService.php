@@ -1,6 +1,6 @@
 <?php
 
-namespace Cashewdigital\DateService;
+namespace Cashewdigital;
 
 use Carbon\Carbon;
 
@@ -30,26 +30,5 @@ class DateService
 
         return $dates;
     }
-
-    public function generateDateRangeWeekDayOnlyInDimDate(Carbon $start_date, Carbon $end_date)
-    {
-        $startDimDate = DimDate::where('date', $start_date->toDateString())->first();
-        $endDimDate = DimDate::where('date', $end_date->toDateString())->first();
-
-        $dates = [];
-
-        for($x = $startDimDate->id; $x < $endDimDate->id; $x ++) {
-
-            $date = Carbon::parse(DimDate::find($x)->date);
-
-            if ($date->isWeekday()) {
-                $dates[] = $x;
-            }
-        }
-
-        return $dates;
-
-    }
-
 
 }
