@@ -17,6 +17,16 @@ class DateService
         return $dates;
     }
 
+    public function generateDateRangeString(Carbon $start_date, Carbon $end_date)
+    {
+        $dates = $this->generateDateRange($start_date, $end_date);
+        $dateStrings = [];
+        foreach ($dates as $date) {
+            $dateStrings[] = $date->toDateString();
+        }
+        return $dateStrings;
+    }
+
     public function generateDateRangeWeekdayOnly(Carbon $start_date, Carbon $end_date)
     {
         $dates = [];
