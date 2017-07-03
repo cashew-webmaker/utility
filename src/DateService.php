@@ -6,8 +6,11 @@ use Carbon\Carbon;
 
 class DateService
 {
-    public function generateDateRange(Carbon $start_date, Carbon $end_date)
+    public function generateDateRange($startDate, $endDate)
     {
+        $start_date = Carbon::parse($startDate);
+        $end_date = Carbon::parse($endDate);
+
         $dates = [];
 
         for($date = $start_date; $date->lessThanOrEqualTo($end_date->endOfDay()); $date->addDay()) {
@@ -17,7 +20,7 @@ class DateService
         return $dates;
     }
 
-    public function generateDateRangeString(Carbon $start_date, Carbon $end_date)
+    public function generateDateRangeString($start_date, $end_date)
     {
         $dates = $this->generateDateRange($start_date, $end_date);
         $dateStrings = [];
@@ -27,8 +30,11 @@ class DateService
         return $dateStrings;
     }
 
-    public function generateDateRangeWeekdayOnly(Carbon $start_date, Carbon $end_date)
+    public function generateDateRangeWeekdayOnly($startDate, $endDate)
     {
+        $start_date = Carbon::parse($startDate);
+        $end_date = Carbon::parse($endDate);
+
         $dates = [];
 
         for($date = $start_date; $date->lessThanOrEqualTo($end_date->endOfDay()); $date->addDay()) {
