@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: normanwanto
- * Date: 2017-03-07
- * Time: 3:37 PM
- */
 
-namespace Cashewdigital;
+namespace Cashewdigital\Utilities;
 
 
 class StringService

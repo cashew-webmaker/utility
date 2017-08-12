@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: normanwanto
- * Date: 2017-03-03
- * Time: 3:55 PM
- */
 
-namespace App\Services\MathService;
+
+namespace Cashewdigital\Utilities;
 
 
 class MathService
