@@ -4,7 +4,7 @@
 namespace Cashewdigital\Utilities;
 
 
-class MathService
+class Math
 {
 
     public function calculateMedian(array $array)

@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Cashewdigital\\Utilities\\": "src/"
+            "Cashewdigital\\Utility\\": "src/"
         }
     }
 }
