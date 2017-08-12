@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Cashewdigital\Utilities;
+namespace Cashewdigital\Utility;
 
 
 class Math

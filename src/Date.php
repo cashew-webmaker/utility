@@ -1,6 +1,6 @@
 <?php
 
-namespace Cashewdigital\Utilities;
+namespace Cashewdigital\Utility;
 
 use Carbon\Carbon;
 
