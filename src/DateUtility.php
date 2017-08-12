@@ -4,7 +4,7 @@ namespace Cashewdigital\Utility;
 
 use Carbon\Carbon;
 
-class Date
+class DateUtility
 {
     public function generateDateRange($startDate, $endDate)
     {

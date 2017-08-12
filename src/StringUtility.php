@@ -3,7 +3,7 @@
 namespace Cashewdigital\Utility;
 
 
-class String
+class StringUtility
 {
     // Returns Boolean True or False
     public function like_match($pattern, $subject)

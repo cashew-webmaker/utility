@@ -3,7 +3,7 @@
 namespace Cashewdigital\Utility;
 
 
-class Probability
+class ProbabilityUtility
 {
     private $probability;
 
